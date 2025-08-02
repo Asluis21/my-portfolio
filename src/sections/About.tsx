@@ -4,7 +4,7 @@ import jsLogo from "../assets/js-logo.png";
 import tsLogo from "../assets/ts-logo.png";
 import angularLogo from "../assets/angular-logo.png";
 import reactLogo from "../assets/react-logo.png";
-import mySQLLogo from "../assets/mySQL-logo.png";
+import mySQLLogo from "../assets/mysql-logo.png";
 import sqlServerLogo from "../assets/sqlServer-logo.png";
 import mongoDBLogo from "../assets/mongoDB-logo.png";
 import Skill from "../components/Skill";
