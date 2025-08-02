@@ -6,9 +6,9 @@ export default function Hero({}: Props) {
   return (
     <section className="relative w-full h-[400px] overflow-hidden">
       <div className="text-white flex flex-col justify-center items-start p-8 h-full">
-        <h1 className="text-4xl font-semibold">Luis Alvarado</h1>
+        <h1 className="text-5xl font-semibold">Luis Alvarado</h1>
 
-        <p className="text-xl">Desarrollador backend Junior</p>
+        <p className="text-2xl">Desarrollador backend Junior</p>
       </div>
 
       <img
