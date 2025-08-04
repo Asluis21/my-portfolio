@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "degree": "Ingeniero de Software"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Hola, soy egresado de la carrera técnica de ingeniería de software de Lima, Perú. Tengo conocimientos en múltiples tecnologías. Me apasiona programar y siempre estoy buscando aprender más. Actualmente me encuentro en la búsqueda de un empleo como desarrollador de software en el que pueda crecer profesionalmente."
+  },
+  "skills": "Habilidades",
+  "contact": {
+    "title": "Contáctame",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "viewProject": "Ver Proyecto",
+    "viewDemo": "Ver Demo",
+    "viewBackend": "Ver Backend",
+    "viewFrontend": "Ver Frontend",
+    "spotifyPlaylistManagement": {
+        "title": "Gestión de Playlists de Spotify",
+        "description": "Una aplicación web para gestionar listas de reproducción de Spotify con Angular 17 e integración con la API de Spotify. Las características incluyen creación, eliminación y gestión de canciones de playlists."
+    },
+    "taskListApp": {
+        "title": "Aplicación de Lista de Tareas",
+        "description": "Una aplicación de gestión de tareas construida con Angular 15 y Spring Boot. Permite a los usuarios crear, editar y eliminar tareas, con un enfoque en un diseño amigable para el usuario."
+    },
+    "warehouseManagement": {
+        "title": "Sistema de Gestión de Almacenes",
+        "description": "Un sistema de gestión de almacenes desarrollado con Angular 17 y Spring Boot. Proporciona funcionalidades para la gestión de pedidos, la gestión de productos y el seguimiento de inventario."
+    }
+  },
+  "contactForm": {
+    "title": "Contáctame",
+    "namePlaceholder": "Ingresa tu nombre",
+    "emailPlaceholder": "Ingresa tu email",
+    "messagePlaceholder": "Ingresa tu mensaje",
+    "successMessage": "¡Mensaje enviado con éxito!",
+    "send":"Enviar",
+    "errorMessage": "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+    "validationErrors": {
+      "nameRequired": "El nombre es obligatorio.",
+      "emailRequired": "El email es obligatorio.",
+      "emailInvalid": "El email no es válido.",
+      "messageRequired": "El mensaje es obligatorio."
+    }
+  }
+  
+}

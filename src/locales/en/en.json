@@ -1,0 +1,56 @@
+{
+  "navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "degree": "Software Engineer"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Hi, I am a software engineer with knowledge in multiple technologies from Lima, Perú. I am very passionate about programming and always eager to improve and learn more. I am currently seeking a software developer job where I can grow professionally."
+  },
+  "skills": "Skills",
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View Project",
+    "viewDemo": "View Live Demo",
+    "viewBackend": "View Backend",
+    "viewFrontend": "View Frontend",
+    "spotifyPlaylistManagement": {
+        "title": "Spotify Playlist Management",
+        "description": "A web application for managing Spotify playlists with Angular 17 and Spotify API integration. Features include playlist creation, deletion, and song management."
+    },
+    "taskListApp": {
+        "title": "Task List Application",
+        "description": "A task management application built with Angular 15 and Spring Boot. It allows users to create, edit, and delete tasks, with a focus on user-friendly design."
+    },
+    "warehouseManagement": {
+        "title": "Warehouse Management System",
+        "description": "A warehouse management system developed with Angular 17 and Spring Boot. It provides functionalities for order management, managing products, and stock tracking."
+    }
+  },
+  "contactForm": {
+    "title": "Contact Me",
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "Enter your email",
+    "messagePlaceholder": "Enter your message",
+    "successMessage": "Message sent successfully!",
+    "send": "Send",
+    "errorMessage": "Error sending message. Please try again.",
+    "validationErrors": {
+      "nameRequired": "Name is required.",
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Email is invalid.",
+      "messageRequired": "Message is required."
+    }
+  }
+}
