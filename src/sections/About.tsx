@@ -1,5 +1,5 @@
 import javaLogo from "../assets/java-logo.png";
-import cSharpLogo from "../assets/csharp-logo.png";
+import cSharpLogo from "../assets/cSharp-logo.png";
 import jsLogo from "../assets/js-logo.png";
 import tsLogo from "../assets/ts-logo.png";
 import angularLogo from "../assets/angular-logo.png";
