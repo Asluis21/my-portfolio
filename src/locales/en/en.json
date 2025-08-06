@@ -11,7 +11,9 @@
     "title": "About Me",
     "description": "Hi, I am a software engineer with knowledge in multiple technologies from Lima, Perú. I am very passionate about programming and always eager to improve and learn more. I am currently seeking a software developer job where I can grow professionally."
   },
-  "skills": "Skills",
+  "skills": {
+    "title": "Skills"
+  },
   "contact": {
     "title": "Contact Me",
     "name": "Name",

@@ -33,7 +33,7 @@ export default function About({ }: Props) {
       <hr className="my-8 border-gray-300 dark:border-gray-700" />
 
       <section id="skills" className="py-4">
-        <h1 className="dark:text-white text-3xl my-8">{t('skills')}</h1>
+        <h1 className="dark:text-white text-3xl my-8">{t('skills.title')}</h1>
 
         <ul className=" dark:text-gray-300 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <li data-aos="flip-left"><Skill name="Java" logo={javaLogo} level={2} /></li>

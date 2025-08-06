@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 type Props = {
@@ -13,7 +11,7 @@ export default function Skill({ name, logo, level }: Props) {
 
 
   return (
-    <li className="flex flex-col items-center gap-2">
+    <div className="flex flex-col items-center gap-2">
       {logo && <img src={logo} alt={name + "logo"} className="w-20 h-20" />}
       <h2 className="text-lg">{name}</h2>
       <div className="flex flex-row">
@@ -30,6 +28,6 @@ export default function Skill({ name, logo, level }: Props) {
           )),
         ]}
       </div>
-    </li>
+    </div>
   );
 }

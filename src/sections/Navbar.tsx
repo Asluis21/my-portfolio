@@ -36,7 +36,7 @@ export default function Navbar({ }: Props) {
                     {/* Desktop Navigation Links */}
                     <div className="hidden md:flex space-x-8">
                         <a href="#about" className="dark:text-white dark:hover:text-gray-300 text-gray-700 hover:text-backgroundDarkMode font-medium">{t('navbar.about')}</a>
-                        <a href="#skills" className="dark:text-white dark:hover:text-gray-300 text-gray-700 hover:text-backgroundDarkMode font-medium">{t('skills')}</a>
+                        <a href="#skills" className="dark:text-white dark:hover:text-gray-300 text-gray-700 hover:text-backgroundDarkMode font-medium">{t('skills.title')}</a>
                         <a href="#projects" className="dark:text-white dark:hover:text-gray-300 text-gray-700 hover:text-backgroundDarkMode font-medium">{t('navbar.projects')}</a>
                         <a href="#contact" className="dark:text-white dark:hover:text-gray-300 text-gray-700 hover:text-backgroundDarkMode font-medium">{t('navbar.contact')}</a>
                     </div>

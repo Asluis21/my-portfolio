@@ -11,7 +11,9 @@
     "title": "Sobre mí",
     "description": "Hola, soy egresado de la carrera técnica de ingeniería de software de Lima, Perú. Tengo conocimientos en múltiples tecnologías. Me apasiona programar y siempre estoy buscando aprender más. Actualmente me encuentro en la búsqueda de un empleo como desarrollador de software en el que pueda crecer profesionalmente."
   },
-  "skills": "Habilidades",
+  "skills": {
+    "title": "Habilidades"
+  },
   "contact": {
     "title": "Contáctame",
     "name": "Nombre",
