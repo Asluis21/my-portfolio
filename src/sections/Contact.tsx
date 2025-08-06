@@ -79,17 +79,23 @@ export default function Contact({ }: Props) {
 
                 <div className="flex flex-col md:flex-row gap-4 mb-4">
                     <div className="flex-1">
-                        <input autoComplete='name' value={formData.name} onChange={handleChange} type="text" id="name" placeholder={t('contactForm.namePlaceholder')} className="dark:text-white width h-15 mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-lg focus:outline-none" />
+                        <input  data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" autoComplete='name' value={formData.name} onChange={handleChange} type="text" id="name" placeholder={t('contactForm.namePlaceholder')} className="dark:text-white width h-15 mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-lg focus:outline-none" />
                         {errors.name && <p className="text-left my-3 text-red-500 text-sm">{errors.name}</p>}
                     </div>
                     <div className="flex-1">    
-                        <input autoComplete='email' value={formData.email} onChange={handleChange} type="email" id="email" placeholder={t('contactForm.emailPlaceholder')} className="dark:text-white width h-15 mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-lg focus:outline-none" />
+                        <input  data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" autoComplete='email' value={formData.email} onChange={handleChange} type="email" id="email" placeholder={t('contactForm.emailPlaceholder')} className="dark:text-white width h-15 mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-lg focus:outline-none" />
                         {errors.email && <p className="text-left my-3 text-red-500 text-sm">{errors.email}</p>}
                     </div>
                 </div>
 
                 <div className="mb-4">
-                    <textarea value={formData.message} onChange={handleChange} id="message" placeholder={t('contactForm.messagePlaceholder')} className="dark:text-white width h-30 mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-lg focus:outline-none" rows={4}></textarea>
+                    <textarea   data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" value={formData.message} onChange={handleChange} id="message" placeholder={t('contactForm.messagePlaceholder')} className="dark:text-white width h-30 mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-lg focus:outline-none" rows={4}></textarea>
                     {errors.message && <p className="text-left my-3 text-red-500 text-sm">{errors.message}</p>}
                 </div>
 

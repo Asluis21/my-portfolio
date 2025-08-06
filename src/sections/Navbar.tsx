@@ -8,6 +8,7 @@ export default function Navbar({ }: Props) {
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [language, setLanguage] = useState('es');
     const { t, i18n } = useTranslation();
+    const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <nav className="bg-white dark:bg-backgroundDarkMode shadow" role='navigation'>
@@ -17,13 +18,38 @@ export default function Navbar({ }: Props) {
                         MiPortafolio
                     </div>
 
-                    {/* Navigation Links */}
+                    {/* Mobile Menu Button */}
+                    <div className="block md:hidden text-2xl">
+                        <button
+                            className='cursor-pointer'
+                            type='button'
+                            aria-label="Open menu"    
+                            onClick={() => setMenuOpen(!menuOpen)}
+                            >
+                            {/* Simple hamburger icon */}
+                            <span className="block w-6 h-0.5 bg-gray-800 mb-1"></span>
+                            <span className="block w-6 h-0.5 bg-gray-800 mb-1"></span>
+                            <span className="block w-6 h-0.5 bg-gray-800"></span>
+                        </button>
+                    </div>
+
+                    {/* Desktop Navigation Links */}
                     <div className="hidden md:flex space-x-8">
                         <a href="#about" className="dark:text-white dark:hover:text-gray-300 text-gray-700 hover:text-backgroundDarkMode font-medium">{t('navbar.about')}</a>
                         <a href="#skills" className="dark:text-white dark:hover:text-gray-300 text-gray-700 hover:text-backgroundDarkMode font-medium">{t('skills')}</a>
                         <a href="#projects" className="dark:text-white dark:hover:text-gray-300 text-gray-700 hover:text-backgroundDarkMode font-medium">{t('navbar.projects')}</a>
                         <a href="#contact" className="dark:text-white dark:hover:text-gray-300 text-gray-700 hover:text-backgroundDarkMode font-medium">{t('navbar.contact')}</a>
                     </div>
+
+                    {/* Mobile Navigation Links */}
+                    {menuOpen && (
+                    <div className="absolute top-16 left-0 w-full bg-white dark:bg-backgroundDarkMode flex flex-col items-center space-y-4 py-4 md:hidden z-50 shadow">
+                        <a href="#about" className="dark:text-white text-gray-700 font-medium" onClick={() => setMenuOpen(false)}>{t('navbar.about')}</a>
+                        <a href="#skills" className="dark:text-white text-gray-700 font-medium" onClick={() => setMenuOpen(false)}>{t('skills')}</a>
+                        <a href="#projects" className="dark:text-white text-gray-700 font-medium" onClick={() => setMenuOpen(false)}>{t('navbar.projects')}</a>
+                        <a href="#contact" className="dark:text-white text-gray-700 font-medium" onClick={() => setMenuOpen(false)}>{t('navbar.contact')}</a>
+                    </div>
+                    )}
 
                     <div className="flex gap-4">
                         {/* Dark Mode Toggle */}

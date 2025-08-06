@@ -7,6 +7,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 1s ease-out forwards', // Adjust duration and easing as needed
+      },
       colors: {
         projectsBg: '#415E72',
       },
@@ -15,5 +24,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-motion')], 
 };

@@ -12,10 +12,10 @@ export default function Projects({ }: Props) {
 
   return (
       <section id='projects' className="bg-projectsBg dark:bg-projectsBgDarkMode p-5">
-        <h2 className="text-3xl my-8 text-white">{t('projects.title')}</h2>
+        <h2 className="text-3xl my-8 dark:text-white">{t('projects.title')}</h2>
 
         <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center'>
-          <li>
+          <li data-aos="zoom-in">
             <ProjectCard
               title={t('projects.spotifyPlaylistManagement.title')}
               description={t('projects.spotifyPlaylistManagement.description')}
@@ -25,7 +25,7 @@ export default function Projects({ }: Props) {
             />
           </li>
           
-          <li>
+          <li data-aos="zoom-in">
             <ProjectCard
               title={t('projects.taskListApp.title')}
               description={t('projects.taskListApp.description')}
@@ -35,7 +35,7 @@ export default function Projects({ }: Props) {
             />
           </li>
 
-          <li>
+          <li data-aos="zoom-in">
             <ProjectCard
               title={t('projects.warehouseManagement.title')}
               description={t('projects.warehouseManagement.description')}
