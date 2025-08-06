@@ -1,69 +1,75 @@
-# React + TypeScript + Vite
+# Mi Portafolio Web — Luis Asluis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portafolio personal desarrollado con **React**, **TypeScript**, **Vite** y **Tailwind CSS**. Aquí muestro mis habilidades, proyectos y formas de contacto, con soporte para español e inglés.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [EmailJS](https://www.emailjs.com/) (formulario de contacto)
+- [i18next](https://www.i18next.com/) (internacionalización)
+- [AOS](https://michalsnik.github.io/aos/) (animaciones al hacer scroll)
+- [React Toastify](https://fkhadra.github.io/react-toastify/) (notificaciones)
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Diseño responsive (adaptable a móvil y escritorio)
+- Modo oscuro y claro
+- Animaciones suaves al hacer scroll
+- Formulario de contacto funcional (EmailJS)
+- Notificaciones amigables (React Toastify)
+- Internacionalización: Español e Inglés
+- Accesibilidad y buenas prácticas de SEO
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Instalación y uso local
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/mi-portafolio.git
+   cd mi-portafolio
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Crea un archivo `.env` con tus claves de EmailJS:
+   ```
+   VITE_EMAILJS_SERVICE_ID=
+   VITE_EMAILJS_TEMPLATE_ID=
+   VITE_EMAILJS_PUBLIC_KEY=
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+5. Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+
+## 🛠️ Scripts útiles
+
+- `npm run dev` — Inicia el servidor de desarrollo
+- `npm run build` — Genera la versión de producción en `/dist`
+- `npm run preview` — Previsualiza la versión de producción localmente
+
+## 🌐 Despliegue en Netlify
+
+1. Asegúrate de tener el archivo `_redirects` en la carpeta `public` con el siguiente contenido:
+   ```
+   /*    /index.html   200
+   ```
+2. Configura tus variables de entorno en Netlify (las mismas que en `.env`).
+3. El directorio de publicación es `dist`.
+
+## 📄 Licencia
+
+Este proyecto es de uso personal. Puedes usarlo como referencia para tus propios proyectos.
+
+---
+
+¡Gracias por visitar mi portafolio!  
+Si tienes alguna pregunta o propuesta, no dudes en contactarme a través del formulario del sitio.
