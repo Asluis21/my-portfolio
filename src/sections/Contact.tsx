@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 type Props = {}
 
@@ -57,10 +59,10 @@ export default function Contact({ }: Props) {
             import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         ).then((response) => {
             console.log('SUCCESS!', response.status, response.text);
-            alert(t('contactForm.successMessage'));
+            toast.success(t('contactForm.successMessage'));
             setFormData({ name: '', email: '', message: '' }); // Reset form
         }).catch(() => {
-            alert(t('contactForm.errorMessage'));
+            toast.error(t('contactForm.errorMessage'));
         });
     };
 
@@ -101,6 +103,7 @@ export default function Contact({ }: Props) {
 
                 <button type="submit" className="cursor-pointer px-4 py-2 bg-buttonPrimary text-white rounded hover:bg-buttonPrimaryHover transition">{t('contactForm.send')}</button>
             </form>
+            <ToastContainer position='top-right' autoClose={3000} hideProgressBar />
         </section>
     )
 }
